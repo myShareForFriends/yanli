@@ -46,7 +46,7 @@ class classUser {
 	 */
 	function register($username, $password) {
 		if ($this->exists ( $username )) {
-			return - 1;
+			return -1;
 		} else {
 			$data = "\n" . $username . "|" . $password;
 			file_put_contents ( "files/user_password", $data, FILE_APPEND );
